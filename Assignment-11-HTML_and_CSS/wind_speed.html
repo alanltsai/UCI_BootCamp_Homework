@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="style.css">
+    </head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <a class="btn btn-info btn-lg" href="index_2.html">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+                </ul>
+            </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <p></p>
+            <div class="col-md-8">
+                <div class="jumbotron bg-white">
+                    <h1 class="display-5 text-info">Wind Speed</h1>
+                    <hr class="my-4">
+                    <div class="pull-left">
+                        <img src="Resources/Images/Fig4.png" alt="wind_speed" class="img-fluid">
+                    </div>
+                    <p>This analysis shows the correlation between latitude and wind speed (measured in miles per hour).</p>
+                    <p>Based on the plot, it seems as though most degrees of latitude exhibit relatively low wind speeds. 
+                        Southen cities close to the equator (within 20°S) show relatively lower wind speeds, where cities farther south show wind speeds evenly spread out between 0 and 25 mph. 
+                    </p>
+                    <p>
+                        Most of the data points from cities in the north are concentrated in the 0-10 mph range. 
+                        Cities spanning acroos the norther latitudes do mostly exhibit wind speeds between 0-25 mph, but a few cities over 40°N of the equator show speeds that range from 25-35 mph, which doesn't show in the south.
+                </div>
+            </div>
+            <p></p>
+            <div class="col-md-4">
+                <div class="jumbotron bg-white">
+                    <h3 class="display-6 text-info">Visualizations</h3>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="max_temp.html">
+                                <img src="Resources/Images/Fig1.png" alt="max_temp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="humidity.html">
+                                <img src="Resources/Images/Fig2.png" alt="humidity" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="cloudiness.html">
+                                <img src="Resources/Images/Fig3.png" alt="cloudiness" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6 border border-info">
+                            <a href="wind_speed.html">
+                                <img src="Resources/Images/Fig4.png" alt="wind_speed" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

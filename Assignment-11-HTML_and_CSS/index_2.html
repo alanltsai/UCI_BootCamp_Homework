@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <title>Bootstrap Components</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+      <link rel="stylesheet" href="style.css">
+    </head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+        <a class="btn btn-info btn-lg" href="#">Latitude</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humidity.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="data.html">Data</a>
+                </li>
+                </ul>
+            </div>
+    </nav>
+    <br>
+    <div class="container-fluid">
+        <div class="row">
+            <p></p>
+            <div class="col-md-8">
+                <div class="jumbotron bg-white">
+                    <h1 class="display-5 text-info">Summary: Latitude vs. X</h1>
+                    <hr class="my-4">
+                    <!-- <div class="pull-left">
+                        <img src="/Users/alantsai/Desktop/UCI_BOOTCAMP/Class_Repo/UCIRV201902DATA3/02-Homework/11-Web/Instructions/Resources/assets/images/Fig1.png" alt="max_temp" class="img-fluid">
+                    </div> -->
+                    <p>The purpose of this project was to visualize and analyze how different aspects of weather change with varying points of latitude. The different factors of weather that were chosen included Max Temperature, Humidity, Cloudiness, and Wind Speed. </p>
+                    <p>Over 500 geographical coordinates were randomly generated using Python. The OpenWeather API was used to pull data for these random geographical coordinates, and the data was then compiled using Python.</p>
+                    <p>The Matplotlib Python library was used to create visualizations. This site provides the source data and visualizations created as a part of the analysis, as well as explanations and descriptions of any trend and correlations witnessed.</p>
+                    <p class="font-weight-bold text-danger">Use the panel on the right to navigate between the different plots, or use the navigation bar at the top to view the plots and the source data. Use the button at the top left to navigate back to this homepage.</p>
+                </div>
+            </div>
+            <p></p>
+            <div class="col-md-4">
+                <div class="jumbotron bg-white">
+                    <h3 class="display-6 text-info">Visualizations</h3>
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="max_temp.html">
+                                <img src="Resources/Images/Fig1.png" alt="max_temp" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="humidity.html">
+                                <img src="Resources/Images/Fig2.png" alt="humidity" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="cloudiness.html">
+                                <img src="Resources/Images/Fig3.png" alt="cloudiness" class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="wind_speed.html">
+                                <img src="Resources/Images/Fig4.png" alt="wind_speed" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <p class="text-center">This website was created by Alan Tsai as a part of the UCI Data Analytics Bootcamp.</p>
+    </div>
+</body>
+</html>
+
